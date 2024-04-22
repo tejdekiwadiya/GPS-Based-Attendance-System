@@ -22,7 +22,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "install-server": "cd BackEnd && npm install",
+    "start-server": "cd BackEnd && npx nodemon",
+    "install-client": "cd FrontEnd && cd my-app && npm install",
+    "build-client": "cd FrontEnd && cd my-app && npm run build",
+    "start-client": "cd FrontEnd && cd my-app && npm run start"
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +46,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
