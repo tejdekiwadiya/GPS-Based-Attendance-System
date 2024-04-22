@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0;
+}
+
+.container-download {
+  display: grid;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: -25px;
+}
+
+.button-download {
+  font-family: 'Josefin Sans', sans-serif;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #2bb5ec;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+}
+
+.button-download:disabled {
+  pointer-events: none;
+}
+
+.button-download:hover {
+  color: #ffffff;
+  border-color: #2bb5ec;
+  background-color: #2bb5ec;
+  /* transform: translateY(2px); */
+}
+
+.container2 {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap-reverse;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.limiter {
+  width: 100%;
+  margin: 0 auto
+}
+
+.container-table100 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.wrap-table100 {
+  width: 1100px;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+table * {
+  position: relative;
+}
+
+table thead tr {
+  height: 60px;
+  background: #2bb5ec;
+}
+
+table tbody tr {
+  height: 50px
+}
+
+table tbody tr:last-child {
+  border: 0
+}
+
+table td,
+table th {
+  text-align: center;
+}
+
+table td.l,
+table th.l {
+  text-align: center;
+}
+
+table td.c,
+table th.c {
+  text-align: center;
+}
+
+table td.r,
+table th.r {
+  text-align: center;
+}
+
+.table100-head th {
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.2;
+  font-weight: unset
+}
+
+tbody tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+tbody tr {
+  font-size: 15px;
+  color: rgb(5, 5, 5);
+  line-height: 1.2;
+}
+
+tbody tr:hover {
+  background-color: #2bb5ec4d;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  scale: 1.02;
+
+  .column2 {
+    color: #00658d;
+  }
+
+  .column4 {
+    color: red;
+  }
+
+  .column5 {
+    color: green;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  table {
+    display: block
+  }
+
+  table>*,
+  table tr,
+  table td,
+  table th {
+    display: block
+  }
+
+  table thead {
+    display: none
+  }
+
+  table tbody tr {
+    height: auto;
+    padding: 37px 0
+  }
+
+  table tbody tr td {
+    padding-left: 40% !important;
+    margin-bottom: 24px
+  }
+
+  table tbody tr td:last-child {
+    margin-bottom: 0
+  }
+
+  table tbody tr td:before {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+
+  table tbody tr td:nth-child(1):before {
+    content: "Sr. No.";
+  }
+
+  table tbody tr td:nth-child(2):before {
+    content: "Enrollment";
+  }
+
+  table tbody tr td:nth-child(3):before {
+    content: "Name";
+  }
+
+  table tbody tr td:nth-child(4):before {
+    content: "Date - Time";
+  }
+
+  table tbody tr td:nth-child(5):before {
+    content: "Status";
+  }
+
+  .column4,
+  .column5,
+  .column6 {
+    text-align: center;
+  }
+
+  .column4,
+  .column5,
+  .column6,
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%
+  }
+
+  tbody tr {
+    font-size: 14px
+  }
+}
+
+@media(max-width: 576px) {
+  .container-table100 {
+    padding-left: 15px;
+    padding-right: 15px
+  }
+}

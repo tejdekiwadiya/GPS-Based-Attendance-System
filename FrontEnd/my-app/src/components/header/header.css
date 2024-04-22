@@ -1,0 +1,17 @@
+.container1 {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  #nav {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    color: black;
+  }
+  
+  #nav .logotext {
+    position: relative;
+    margin-top: 0.78rem;
+  }

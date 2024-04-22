@@ -1,0 +1,18 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;1,400&display=swap');
+
+
+.profile {
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Asap', sans-serif;
+
+
+    .form-control:focus {
+        box-shadow: none;
+        border-color: green;
+    }
+
+    .labels {
+        font-size: 11px
+    }
+}

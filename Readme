@@ -1,0 +1,26 @@
+----------- Overview ----------- 
+The GPS-Based Attendance System is a modern solution designed to simplify attendance tracking for organizations. 
+Leveraging the MERN stack (MongoDB, Express.js, React.js, Node.js), this system utilizes GPS technology and real-time location 
+tracking to authenticate users and mark attendance accurately.
+
+----------- Features ----------- 
+MAC Address Authentication: Users' devices' MAC addresses are securely stored in the database during signup for future authentication.
+Real-Time Location Tracking: The system verifies the user's location to ensure they are within the specified range set by the administrator before allowing attendance marking.
+Efficient Attendance Management: Organizations can bid farewell to manual attendance processes and embrace a seamless, reliable, and efficient solution that saves time and reduces administrative burden.
+
+Some Changes Before Run in File Path:
+1] BackEnd/routes/dashboard.js
+2] BackEnd/routes/history.js
+3] BackEnd/routes/update.js
+
+-> const filepath = 'LOCAL DIR. PATH/data.json';
+
+---- Step to Run Project ----
+     *** Server Side ***
+1] cd BackEnd
+2] npx nodemon
+
+     *** Client Side ***
+3] cd FrontEnd
+4] cd my-app
+5] npm start
