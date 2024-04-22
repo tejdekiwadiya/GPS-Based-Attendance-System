@@ -62,21 +62,20 @@ export default function DashBoard() {
     }, []);
 
     //Rajkot Bashed Location
-    // useEffect(() => {
-    //     setTargetCoords({ // Move the initialization of targetCoords here
-    //         latitude: 22.29001,
-    //         longitude: 70.76711
-    //     });
-    // }, []);
-
-    
-    //Marwadi Bashed Location
     useEffect(() => {
         setTargetCoords({ // Move the initialization of targetCoords here
-            latitude: 22.3674,
-            longitude: 70.7972
+            latitude: 22.29001,
+            longitude: 70.76711
         });
     }, []);
+    
+    //Marwadi Bashed Location
+    // useEffect(() => {
+    //     setTargetCoords({ // Move the initialization of targetCoords here
+    //         latitude: 22.3674,
+    //         longitude: 70.7972
+    //     });
+    // }, []);
 
     useEffect(() => {
         const getDistance = (lat1, lon1, lat2, lon2) => {
